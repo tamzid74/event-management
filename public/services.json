@@ -1,0 +1,46 @@
+ [
+      {
+        "id": 1,
+        "name": "Photography Service",
+        "image_url": "insert_image_url_here",
+        "price": "$1,500",
+        "description": "Capture every precious moment of your special day with our professional photography service. Our experienced photographers will create timeless memories for you and your loved ones. We use state-of-the-art equipment to ensure the highest quality images. From candid shots to formal portraits, we'll document every emotion and detail of your wedding day. Let us tell your love story through beautiful photographs that you'll cherish forever.",
+        "button": "Learn More"
+      },
+      {
+        "id": 2,
+        "name": "Catering Service",
+        "image_url": "insert_image_url_here",
+        "price": "$5,000",
+        "description": "Treat your guests to a delightful culinary experience with our top-notch catering service. From appetizers to desserts, we'll customize a menu to satisfy everyone's taste buds. Our team of expert chefs uses only the freshest ingredients to create mouthwatering dishes that will leave a lasting impression. Whether you prefer a formal sit-down dinner or a buffet-style feast, we'll ensure that your wedding reception is a gastronomic delight."
+      },
+      {
+        "id": 3,
+        "name": "Floral Decoration",
+        "image_url": "insert_image_url_here",
+        "price": "$800",
+        "description": "Elevate the ambiance of your wedding venue with exquisite floral decorations. Our talented florists will design breathtaking arrangements that match your theme. From stunning centerpieces to romantic bridal bouquets, we'll use a variety of fresh, seasonal flowers to create a magical atmosphere. Whether your style is classic and elegant or whimsical and rustic, our floral designs will transform your venue into a floral paradise."
+      },
+      {
+        "id": 4,
+        "name": "DJ and Entertainment",
+        "image_url": "insert_image_url_here",
+        "price": "$1,200",
+        "description": "Keep the dance floor alive and your guests entertained throughout the night with our professional DJ and entertainment services. We'll create the perfect playlist for your celebration. Our DJs are experts at reading the crowd and selecting music that will keep everyone dancing. In addition to music, we offer a range of entertainment options, including photo booths, lighting effects, and interactive games. Let us add a touch of excitement and fun to your wedding reception."
+      },
+      {
+        "id": 5,
+        "name": "Wedding Planning",
+        "image_url": "insert_image_url_here",
+        "price": "$2,500",
+        "description": "Let us take the stress out of wedding planning. Our experienced planners will assist you with every detail, ensuring a seamless and memorable event. From finding the perfect venue to coordinating with vendors, we'll handle all the logistics. We'll work closely with you to bring your vision to life and ensure that your wedding day is everything you've dreamed of. Relax and enjoy the journey to your happily ever after while we take care of the rest."
+      },
+      {
+        "id": 6,
+        "name": "Transportation Service",
+        "image_url": "insert_image_url_here",
+        "price": "$600",
+        "description": "Arrive in style and comfort with our wedding transportation service. Choose from a variety of vehicles, from classic cars to luxury limousines. Our professional drivers will ensure that you and your bridal party arrive at the ceremony and reception venues on time and in style. Whether you prefer a classic vintage car or a sleek modern limo, we'll provide you with a chauffeured experience that adds a touch of elegance to your special day."
+      }
+    ]
+  
