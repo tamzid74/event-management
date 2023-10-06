@@ -1,19 +1,21 @@
-
 import { createBrowserRouter } from "react-router-dom";
 import Home from "../pages/Home/Home";
 import Login from "../pages/login/Login";
 import Root from "../layout/Root";
 import Register from "../pages/register/Register";
+import Error from "../layout/Error";
 
 
 const router = createBrowserRouter([
     {
         path: '/',
         element:<Root></Root>,
+        errorElement:<Error></Error>,
         children:[
             {
                 path:'/',
-                element: <Home></Home>
+                element: <Home></Home>,
+                loader: ()=>fetch('/services.json')
             },
             {
                 path:'/login',
