@@ -1,8 +1,14 @@
 import { Link, NavLink } from "react-router-dom";
-import user from "../assets/images/user.png";
 import navIcon from "../assets/images/icons8-heart-balloon-64.png";
+import { useContext } from "react";
+import { AuthContext } from "../provider/AuthProvider";
 
 const Navbar = () => {
+  const { user, logOut } = useContext(AuthContext);
+  console.log(user);
+  const handleSignOut = () => {
+    logOut().then().catch();
+  };
   const navList = (
     <>
       <li>
@@ -17,12 +23,12 @@ const Navbar = () => {
       </li>
       <li>
         <NavLink
-          to="/login"
+          to="/booking"
           className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "underline" : ""
           }
         >
-          login
+          Booking us
         </NavLink>
       </li>
       <li>
@@ -35,10 +41,20 @@ const Navbar = () => {
           About Us
         </NavLink>
       </li>
+      <li>
+        <NavLink
+          to="/gallery"
+          className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "underline" : ""
+          }
+        >
+          Gallery
+        </NavLink>
+      </li>
     </>
   );
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-base-100 sticky inset-0 z-20">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -83,19 +99,26 @@ const Navbar = () => {
         <div className="dropdown dropdown-end z-10">
           <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
             <div className="w-10 rounded-full">
-              <img src={user} />
+              {user ? <img src={user.photoURL} /> : ""}
             </div>
           </label>
           <ul
             tabIndex={0}
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
-            <li>Profile</li>
+            <li>{user && <span>{user?.displayName}</span>}</li>
+            <li>{user && <span>{user.email}</span>}</li>
           </ul>
         </div>
-        <Link className="btn btn-sm" to="/login">
-          Login
-        </Link>
+        {user?.email ? (
+          <button onClick={handleSignOut} className="btn btn-sm">
+            Sign out
+          </button>
+        ) : (
+          <Link className="btn btn-sm" to="/login">
+            Login
+          </Link>
+        )}
       </div>
     </div>
   );

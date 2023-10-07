@@ -36,6 +36,7 @@ const ServiceCard = ({ service }) => {
 };
 
 export default ServiceCard;
+
 ServiceCard.propTypes = {
   service: PropTypes.node,
 };

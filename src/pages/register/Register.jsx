@@ -1,6 +1,16 @@
-import { Link } from "react-router-dom";
+import { useContext, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { AuthContext } from "../../provider/AuthProvider";
+import toast from "react-hot-toast";
+import { FaEye, FaEyeSlash } from "react-icons/fa6";
+import img from "../../assets/images/user.png";
 
 const Register = () => {
+  const { createUser, updateUser } = useContext(AuthContext);
+  const [regError, setRegError] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
+  const navigate = useNavigate();
+
   const handleRegister = (e) => {
     e.preventDefault();
     const form = new FormData(e.currentTarget);
@@ -8,7 +18,34 @@ const Register = () => {
     const email = form.get("email");
     const password = form.get("password");
     console.log(name, password, email);
+
+    setRegError("");
+    if (password.length < 6) {
+      setRegError("*password should contain at least 6 characters");
+      return;
+    } else if (
+      !/(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$%^&+=])/.test(password)
+    ) {
+      setRegError(
+        "*password should contain at least an uppercase, a lowercase,one special character and a number"
+      );
+      return;
+    }
+
+    createUser(email, password)
+      .then((result) => {
+        console.log(result.user);
+        console.log(img)
+        updateUser(name, img).then(() => {
+          toast.success("Registration Successfully");
+          navigate(`/login`);
+        });
+      })
+      .catch((error) => {
+        toast.error(error.message);
+      });
   };
+
   return (
     <div className="hero min-h-screen ">
       <div className="hero-content flex-col w-full">
@@ -36,6 +73,7 @@ const Register = () => {
               <input
                 type="email"
                 placeholder="email"
+                name="email"
                 className="input input-bordered"
                 required
               />
@@ -44,12 +82,22 @@ const Register = () => {
               <label className="label">
                 <span className="label-text">Password</span>
               </label>
-              <input
-                type="password"
-                placeholder="password"
-                className="input input-bordered"
-                required
-              />
+              <div className="relative">
+                <input
+                  type={showPassword ? "text" : "password"}
+                  placeholder="password"
+                  name="password"
+                  className="input input-bordered w-full"
+                  required
+                />
+                <span
+                  className="absolute top-4 right-1"
+                  onClick={() => setShowPassword(!showPassword)}
+                >
+                  {showPassword ? <FaEye></FaEye> : <FaEyeSlash></FaEyeSlash>}
+                </span>
+              </div>
+              {regError && <p className=" text-sm text-red-600">{regError}</p>}
             </div>
             <div className="form-control mt-6">
               <button className="btn btn-primary">Register</button>

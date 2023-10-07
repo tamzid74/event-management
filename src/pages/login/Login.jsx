@@ -1,14 +1,50 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import SocialLogin from "../../Social/SocialLogin";
+import { useContext, useState } from "react";
+import { AuthContext } from "../../provider/AuthProvider";
+import toast from "react-hot-toast";
+import { FaEye, FaEyeSlash } from "react-icons/fa6";
 
 /* eslint-disable react/no-unescaped-entities */
 const Login = () => {
+  const { signIn } = useContext(AuthContext);
+  const [emailError, setEmailError] = useState("");
+  const [passError, setPassError] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
+  const navigate = useNavigate();
+
   const handleLogin = (e) => {
     e.preventDefault();
     const form = new FormData(e.currentTarget);
     const email = form.get("email");
     const password = form.get("password");
     console.log(email, password);
+
+    setEmailError("");
+    setPassError("");
+
+    if (password.length < 6) {
+      setPassError("*Invalid email and Password");
+      return;
+    } else if (
+      !/(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$%^&+=])/.test(password)
+    ) {
+      setPassError(
+        "*password should contain at least an uppercase, a lowercase,one special character and a number"
+      );
+      return;
+    }
+
+    signIn(email, password)
+      .then((result) => {
+        console.log(result.user);
+        toast.success("login Successfully");
+        navigate(location?.state ? location.state : "/");
+      })
+      .catch((error) => {
+        console.error(error.message);
+        setEmailError("*Invalid Email and Password");
+      });
   };
   return (
     <div className="hero min-h-screen">
@@ -29,18 +65,30 @@ const Login = () => {
                 className="input input-bordered"
                 required
               />
+              {emailError && (
+                <p className="text-sm text-red-600">{emailError}</p>
+              )}
             </div>
             <div className="form-control">
               <label className="label">
                 <span className="label-text">Password</span>
               </label>
-              <input
-                type="password"
-                placeholder="Password"
-                name="password"
-                className="input input-bordered"
-                required
-              />
+              <div className="relative">
+                <input
+                  type={showPassword ? "text" : "password"}
+                  placeholder="password"
+                  name="password"
+                  className="input input-bordered w-full"
+                  required
+                />
+                <span
+                  className="absolute top-4 right-1"
+                  onClick={() => setShowPassword(!showPassword)}
+                >
+                  {showPassword ? <FaEye></FaEye> : <FaEyeSlash></FaEyeSlash>}
+                </span>
+              </div>
+              {passError && <p className="text-sm text-red-600">{passError}</p>}
               <label className="label">
                 <a href="#" className="label-text-alt link link-hover">
                   Forgot password?
