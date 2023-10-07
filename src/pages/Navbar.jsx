@@ -1,6 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
-import user from '../assets/images/user.png'
-import navIcon from '../assets/images/icons8-heart-balloon-64.png'
+import user from "../assets/images/user.png";
+import navIcon from "../assets/images/icons8-heart-balloon-64.png";
 
 const Navbar = () => {
   const navList = (
@@ -27,12 +27,12 @@ const Navbar = () => {
       </li>
       <li>
         <NavLink
-          to="/register"
+          to="/about"
           className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "underline" : ""
           }
         >
-          Register
+          About Us
         </NavLink>
       </li>
     </>
@@ -65,20 +65,37 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="flex items-center flex-wrap">
-        <Link to='/'><img src={navIcon} alt="" /></Link>
-        <Link to='/' className=" font-Pacifico normal-case text-lg md:text-3xl">Social Event</Link>
+          <Link to="/">
+            <img src={navIcon} alt="" />
+          </Link>
+          <Link
+            to="/"
+            className=" font-Pacifico normal-case text-lg md:text-3xl"
+          >
+            Social Event
+          </Link>
         </div>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{navList}</ul>
       </div>
       <div className="navbar-end">
-        <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-          <div className="w-10 rounded-full">
-            <img src={user} />
-          </div>
-        </label>
-        <Link className="btn btn-sm" to="/login">Login</Link>
+        <div className="dropdown dropdown-end z-10">
+          <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+            <div className="w-10 rounded-full">
+              <img src={user} />
+            </div>
+          </label>
+          <ul
+            tabIndex={0}
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+          >
+            <li>Profile</li>
+          </ul>
+        </div>
+        <Link className="btn btn-sm" to="/login">
+          Login
+        </Link>
       </div>
     </div>
   );

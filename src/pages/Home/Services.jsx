@@ -6,8 +6,8 @@ const Services = () => {
   console.log(services);
   return (
     <div>
-      <h1 className="text-6xl font-bold text-center mt-10">Our Services</h1>
-      <div className="max-w-6xl mx-auto mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <h1 className="md:text-6xl text-2xl font-bold mt-10 text-center">Our Services</h1>
+      <div className="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-4">
         {services.map((service) => (
           <ServiceCard key={service.id} service={service}></ServiceCard>
         ))}

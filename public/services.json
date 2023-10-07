@@ -1,44 +1,44 @@
- [
-    {
-      "id": 1,
-      "name": "Weddings",
-      "image": "https://i.ibb.co/3pt3JHC/photo-1591604466107-ec97de577aff.jpg",
-      "price": "$5,000 - $15,000",
-      "description": "Your wedding day is one of the most significant events in your life, and we're here to make it perfect. Our wedding planning services encompass every detail, from selecting the dream venue to designing the decor, curating the menu, and coordinating all aspects of your big day. We believe that your wedding should reflect your unique love story, and we work tirelessly to ensure that every element is a reflection of your personalities and preferences. Our experienced team of wedding planners will guide you through the entire process, helping you make informed decisions and handling all the logistics. We believe in creating a stress-free experience, so you can focus on enjoying the journey to your \"I dos.\""
-    },
-    {
-      "id": 2,
-      "name": "Birthday Parties",
-      "image": "https://i.ibb.co/BrLd48v/Birthday-Kids-1.jpg",
-      "price": "$500 - $2,000",
-      "description": "Another year of life deserves to be celebrated in style! Whether you're planning a whimsical children's party, a milestone birthday, or a surprise bash, we've got your back. Our birthday party planning services are designed to take the stress out of organizing and executing a memorable celebration. From selecting a theme that resonates with the guest of honor to arranging entertainment, decorations, and a delicious cake, we'll handle every aspect of your birthday party. Our goal is to create an atmosphere where your guests can let loose and enjoy the festivities while you cherish the moments."
-    },
-    {
-      "id": 3,
-      "name": "Anniversaries",
-      "image": "https://i.ibb.co/tZHGDFF/Trivia-Buffs-1.jpg",
-      "price": "$1,000 - $5,000",
-      "description": "Commemorate your love story with an anniversary celebration that captures the essence of your journey together. Whether it's your first anniversary or a golden milestone, we'll plan the perfect event that reflects your love, commitment, and shared experiences. Our anniversary planning services include selecting a venue with sentimental value, designing personalized decor, arranging entertainment, and curating a menu that delights your guests. Let us handle the details while you focus on rekindling the romance and creating beautiful memories."
-    },
-    {
-      "id": 4,
-      "name": "Engagement Parties",
-      "image": "https://i.ibb.co/JxPbWJy/engagement-party.webp",
-      "price": "$800 - $3,000",
-      "description": "Announcing your engagement is a joyous occasion, and we're here to help you do it in style. Our engagement party planning services are tailored to create a memorable event that marks the beginning of your journey towards marriage. From selecting a venue that sets the mood to arranging engagement-themed decor and entertainment, we'll ensure that your engagement party is an unforgettable experience for you and your guests. Let us take care of the details so you can focus on celebrating your love."
-    },
-    {
-      "id": 5,
-      "name": "Retirement Parties",
-      "image": "https://i.ibb.co/19zmQBD/download.jpg",
-      "price": "$600 - $2,500",
-      "description": "Retirement is a significant milestone, and it deserves a fitting celebration. Whether it's a colleague bidding farewell to a long and successful career or a loved one embarking on a new chapter, our retirement party planning services will help you honor their achievements and contributions. We'll assist you in selecting the ideal venue, planning a program that pays tribute to the retiree, and arranging tasteful decor and catering. Our goal is to create an atmosphere where everyone can express their appreciation and send the retiree off with warm wishes."
-    },
-    {
-      "id": 6,
-      "name": "Baby Shower",
-      "image": "https://i.ibb.co/s6tQHsL/HFD0023.webp",
-      "price": "$400 - $1,500",
-      "description": "Welcoming a new member into your family is a moment of pure joy, and our baby shower planning services are designed to make it even more special. Whether you're celebrating the impending arrival of your first child or organizing a shower for a dear friend, we'll help you create a memorable day filled with love and anticipation. Our services include selecting a theme, designing decor, arranging games and activities, and ensuring that the baby shower reflects the personality and style of the parents-to-be. Let us handle the logistics while you bask in the excitement of this precious occasion."
-    }
-  ]
+[
+  {
+    "id": 1,
+    "name": "Weddings",
+    "image": "https://i.ibb.co/3pt3JHC/photo-1591604466107-ec97de577aff.jpg",
+    "price": "$5,000 - $15,000",
+    "description": "Your wedding day is one of the most significant events in your life, and we're here to make it perfect. Our wedding planning services encompass every detail, from selecting the dream venue to designing the decor, curating the menu, and coordinating all aspects of your big day. We believe that your wedding should reflect your unique love story, and we work tirelessly to ensure that every element is a reflection of your personalities and preferences. Our experienced team of wedding planners will guide you through the entire process, helping you make informed decisions and handling all the logistics. We believe in creating a stress-free experience, so you can focus on enjoying the journey to your \"I dos.\""
+  },
+  {
+    "id": 2,
+    "name": "Birthday Parties",
+    "image": "https://i.ibb.co/BrLd48v/Birthday-Kids-1.jpg",
+    "price": "$500 - $2,000",
+    "description": "Another year of life deserves to be celebrated in style! Whether you're planning a whimsical children's party, a milestone birthday, or a surprise bash, we've got your back. Our birthday party planning services are designed to take the stress out of organizing and executing a memorable celebration. From selecting a theme that resonates with the guest of honor to arranging entertainment, decorations, and a delicious cake, we'll handle every aspect of your birthday party. Our goal is to create an atmosphere where your guests can let loose and enjoy the festivities while you cherish the moments."
+  },
+  {
+    "id": 3,
+    "name": "Anniversaries",
+    "image": "https://i.ibb.co/tZHGDFF/Trivia-Buffs-1.jpg",
+    "price": "$1,000 - $5,000",
+    "description": "Commemorate your love story with an anniversary celebration that captures the essence of your journey together. Whether it's your first anniversary or a golden milestone, we'll plan the perfect event that reflects your love, commitment, and shared experiences. Our anniversary planning services include selecting a venue with sentimental value, designing personalized decor, arranging entertainment, and curating a menu that delights your guests. Let us handle the details while you focus on rekindling the romance and creating beautiful memories."
+  },
+  {
+    "id": 4,
+    "name": "Engagement Parties",
+    "image": "https://i.ibb.co/JxPbWJy/engagement-party.webp",
+    "price": "$800 - $3,000",
+    "description": "Announcing your engagement is a joyous occasion, and we're here to help you do it in style. Our engagement party planning services are tailored to create a memorable event that marks the beginning of your journey towards marriage. From selecting a venue that sets the mood to arranging engagement-themed decor and entertainment, we'll ensure that your engagement party is an unforgettable experience for you and your guests. Let us take care of the details so you can focus on celebrating your love."
+  },
+  {
+    "id": 5,
+    "name": "Retirement Parties",
+    "image": "https://i.ibb.co/19zmQBD/download.jpg",
+    "price": "$600 - $2,500",
+    "description": "Retirement is a significant milestone, and it deserves a fitting celebration. Whether it's a colleague bidding farewell to a long and successful career or a loved one embarking on a new chapter, our retirement party planning services will help you honor their achievements and contributions. We'll assist you in selecting the ideal venue, planning a program that pays tribute to the retiree, and arranging tasteful decor and catering. Our goal is to create an atmosphere where everyone can express their appreciation and send the retiree off with warm wishes."
+  },
+  {
+    "id": 6,
+    "name": "Baby Shower",
+    "image": "https://i.ibb.co/s6tQHsL/HFD0023.webp",
+    "price": "$400 - $1,500",
+    "description": "A child's bath is a gentle and nurturing ritual that goes beyond the essential task of cleanliness. It is a cherished moment of bonding, exploration, and sensory delight, where the soothing waters transform into a playground of wonderment.As you prepare for the child's bath, you gather the necessary items - a soft towel, mild baby soap, and a gentle shampoo. The room is comfortably warm, free from drafts that could chill tender skin. You test the water's temperature, ensuring it's neither too hot nor too cold, but just right, like the embrace of a loving caregiver.With your baby undressed, you carefully cradle them in your arms, feeling the weight of their small, fragile body against your chest. Their tiny fingers grasp at the air, and their curious eyes take in the world around them, filled with anticipation.As you lower your baby into the warm bathwater, a contented sigh escapes their lips. The water envelops them, creating a sense of weightlessness that mirrors the womb's embrace. Bath time becomes a sensory exploration, as the water's caress and gentle movements engage their developing senses.You cup your hand, allowing water to trickle over your baby's body, creating ripples of delight. The droplets glisten like diamonds in the soft light, and your baby's laughter fills the room, a melody of pure joy. Bath toys float nearby, offering a playful distraction as your baby splashes and explores, learning about the properties of water. With a soft washcloth, you lovingly cleanse their delicate skin, taking care to reach every tiny crease and fold. The scent of the gentle soap mingles with the sweet, natural aroma of your baby's skin, creating a memory that will forever be associated with comfort and care.As you rinse away the soap, your baby's laughter continues, a reminder of the simple pleasures that bring happiness. A tiny hand reaches out, fingers exploring the water's surface, creating patterns that vanish as quickly as they appear.After the bath, you wrap your baby in the warm, soft towel, cocooning them in comfort. Their skin, now clean and glowing, feels like satin against your fingertips. You cradle them close, absorbing the scent of their freshly washed hair and the warmth of their little body. This intimate moment of bath time is not just about physical cleanliness; it's about nurturing the soul. It's a time for connection, for the exchange of love and trust. In this simple act, you are not just a caregiver; you are a source of comfort, security, and endless wonder.As you gaze into your baby's eyes, still sparkling from the bath's adventure, you know that this ritual is more than a routine; it's a precious memory in the making. It's a testament to the boundless love you have for this tiny, miraculous being, and the promise of many more moments of joy and discovery in the journey of parenthood."
+  }
+]
