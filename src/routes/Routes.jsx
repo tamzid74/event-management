@@ -4,6 +4,7 @@ import Login from "../pages/login/Login";
 import Root from "../layout/Root";
 import Register from "../pages/register/Register";
 import Error from "../layout/Error";
+import Details from "../pages/details/Details";
 
 
 const router = createBrowserRouter([
@@ -15,6 +16,11 @@ const router = createBrowserRouter([
             {
                 path:'/',
                 element: <Home></Home>,
+                loader: ()=>fetch('/services.json')
+            },
+            {
+                path:'/services/:id',
+                element: <Details></Details>,
                 loader: ()=>fetch('/services.json')
             },
             {

@@ -2,7 +2,7 @@ import navIcon from '../../assets/images/icons8-heart-balloon-64.png'
 
 const Footer = () => {
   return (
-    <footer className="footer footer-center p-10 bg-slate-200">
+    <footer className="footer footer-center p-10 bg-slate-200 mt-10">
       <aside>
         <img src={navIcon} alt="" />
         <p className="font-bold font-Pacifico normal-case text-xl">
