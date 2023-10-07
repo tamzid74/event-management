@@ -1,4 +1,4 @@
-/* eslint-disable react/no-unescaped-entities */
+
 import svg from "../../assets/images/undraw_team_effort_7w2e.svg";
 const Faq = () => {
   return (
@@ -14,7 +14,7 @@ const Faq = () => {
               Our mission is simple yet profound: to design, plan, and execute
               social events that reflect the unique personalities and desires of
               our clients. We believe that every event is an opportunity to tell
-              a story, and we're here to help you tell yours.
+              a story, and we are here to help you tell yours.
             </p>
           </div>
         </div>
@@ -24,7 +24,7 @@ const Faq = () => {
           Our Commitment
           </div>
           <div className="collapse-content">
-            <p>Whether it's a milestone birthday party, a dreamy wedding, a corporate celebration, or any social event in between, social event is committed to exceeding your expectations. We believe that your special moments should be stress-free, enjoyable, and filled with cherished memories.</p>
+            <p>Whether it is a milestone birthday party, a dreamy wedding, a corporate celebration, or any social event in between, social event is committed to exceeding your expectations. We believe that your special moments should be stress-free, enjoyable, and filled with cherished memories.</p>
           </div>
         </div>
         <div className="collapse collapse-arrow bg-base-200">

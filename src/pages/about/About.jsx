@@ -1,4 +1,4 @@
-/* eslint-disable react/no-unescaped-entities */
+
 import bg from "../../assets/images/jason-goodman-Oalh2MojUuk-unsplash.jpg";
 const About = () => {
   return (
@@ -20,7 +20,7 @@ const About = () => {
               Founded with a vision of making every moment count, social event has been in the business of event management for 20 years.
               Our journey began when a group of event enthusiasts came together,
               driven by a shared desire to turn dreams into realities. Since
-              then, we've curated countless gatherings, leaving behind a trail
+              then, we have curated countless gatherings, leaving behind a trail
               of happy memories and satisfied clients.
             </p>
             <button className="btn btn-success btn-sm">Learn more</button>

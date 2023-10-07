@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import SocialLogin from "../../Social/SocialLogin";
 
 /* eslint-disable react/no-unescaped-entities */
 const Login = () => {
@@ -7,7 +8,7 @@ const Login = () => {
     const form = new FormData(e.currentTarget);
     const email = form.get("email");
     const password = form.get("password");
-    console.log(email,password);
+    console.log(email, password);
   };
   return (
     <div className="hero min-h-screen">
@@ -57,6 +58,7 @@ const Login = () => {
                 </Link>
               </p>
             </div>
+            <SocialLogin></SocialLogin>
           </form>
         </div>
       </div>

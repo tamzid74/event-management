@@ -15,7 +15,11 @@ const Team = () => {
         Meet Our Team
       </h1>
       <div className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-4 mt-10">
-        <div className="w-full max-w-sm rounded-lg">
+        <div
+          className="w-full max-w-sm rounded-lg"
+          data-aos="fade-up"
+          data-aos-duration="10000"
+        >
           <div className="flex flex-col items-center pb-10">
             <img
               className=" h-72 mb-3 rounded-lg"
@@ -23,14 +27,18 @@ const Team = () => {
               alt="Daniel Ramirez"
             />
             <h5 className="mb-1 text-xl font-bold text-gray-900">
-            Daniel Ramirez
+              Daniel Ramirez
             </h5>
             <span className="text-sm text-gray-500 dark:text-gray-400">
-            Marketing Manager
+              Marketing Manager
             </span>
           </div>
         </div>
-        <div className="w-full max-w-sm rounded-lg">
+        <div
+          className="w-full max-w-sm rounded-lg"
+          data-aos="fade-up"
+          data-aos-duration="10000"
+        >
           <div className="flex flex-col items-center pb-10">
             <img
               className=" h-72 mb-3 rounded-lg"
@@ -38,14 +46,18 @@ const Team = () => {
               alt="Daniel Ramirez"
             />
             <h5 className="mb-1 text-xl font-bold text-gray-900">
-            Emily Johnson
+              Emily Johnson
             </h5>
             <span className="text-sm text-gray-500 dark:text-gray-400">
-            Event Coordinator
+              Event Coordinator
             </span>
           </div>
         </div>
-        <div className="w-full max-w-sm rounded-lg">
+        <div
+          className="w-full max-w-sm rounded-lg"
+          data-aos="fade-up"
+          data-aos-duration="10000"
+        >
           <div className="flex flex-col items-center pb-10">
             <img
               className=" h-72 mb-3 rounded-lg"
@@ -53,14 +65,18 @@ const Team = () => {
               alt="Daniel Ramirez"
             />
             <h5 className="mb-1 text-xl font-bold text-gray-900">
-            Michael Roberts
+              Michael Roberts
             </h5>
             <span className="text-sm text-gray-500 dark:text-gray-400">
               Entertainment Coordinator
             </span>
           </div>
         </div>
-        <div className="w-full max-w-sm rounded-lg">
+        <div
+          className="w-full max-w-sm rounded-lg"
+          data-aos="fade-up"
+          data-aos-duration="10000"
+        >
           <div className="flex flex-col items-center pb-10">
             <img
               className="h-72 mb-3 rounded-lg"

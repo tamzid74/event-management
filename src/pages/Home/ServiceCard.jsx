@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
-/* eslint-disable react/prop-types */
+AOS.init();
+
 const ServiceCard = ({ service }) => {
   const { id, name, image, price, description } = service;
   return (
@@ -32,3 +36,6 @@ const ServiceCard = ({ service }) => {
 };
 
 export default ServiceCard;
+ServiceCard.propTypes = {
+  service: PropTypes.node,
+};
