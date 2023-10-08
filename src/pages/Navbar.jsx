@@ -8,7 +8,7 @@ import { useEffect } from "react";
 
 const Navbar = () => {
   useEffect(()=>{
-    AOS.init({once: false,})
+    AOS.init({once: true,})
   },[])
   const { user, logOut } = useContext(AuthContext);
   console.log(user);

@@ -1,6 +1,6 @@
 const Booked = () => {
   return (
-    <div className="max-w-6xl p-5 mx-auto grid grid-col-1 lg:grid-cols-3 gap-4">
+    <div className="max-w-6xl p-5 mx-auto grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
       {/* card-1 */}
       <div className="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
         <h5 className="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">
