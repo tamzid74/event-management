@@ -6,13 +6,12 @@ import { useEffect } from "react";
 
 const ServiceCard = ({ service }) => {
   useEffect(() => {
-    AOS.init({ duration: 2000 });
+    AOS.init({ duration: 1000 });
   }, []);
   const { id, name, image, price, description } = service;
   return (
     <div
       data-aos="fade-up"
-      data-aos-duration="3000"
       className="card bg-base-100 shadow-xl"
     >
       <figure className="px-10 pt-10">
