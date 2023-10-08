@@ -1,9 +1,12 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-undef */
 import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../provider/AuthProvider";
 import toast from "react-hot-toast";
 import { FaEye, FaEyeSlash } from "react-icons/fa6";
-import img from "../../assets/images/user.png";
+import SocialLogin from "../../Social/SocialLogin";
+
 
 const Register = () => {
   const { createUser, updateUser } = useContext(AuthContext);
@@ -34,11 +37,10 @@ const Register = () => {
 
     createUser(email, password)
       .then((result) => {
-        console.log(result.user);
-        console.log(img)
-        updateUser(name, img).then(() => {
+        updateUser(name)
+        .then(() => {
           toast.success("Registration Successfully");
-          navigate(`/login`);
+          navigate(`/`);
         });
       })
       .catch((error) => {
@@ -100,7 +102,7 @@ const Register = () => {
               {regError && <p className=" text-sm text-red-600">{regError}</p>}
             </div>
             <div className="form-control mt-6">
-              <button className="btn btn-primary">Register</button>
+              <button className="btn btn-primary btn-outline">Register</button>
             </div>
             <p className="text-center">
               Already have an account?{" "}
@@ -108,6 +110,7 @@ const Register = () => {
                 Login
               </Link>
             </p>
+            <SocialLogin></SocialLogin>
           </form>
         </div>
       </div>

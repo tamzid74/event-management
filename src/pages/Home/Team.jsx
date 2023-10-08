@@ -1,26 +1,28 @@
-import AOS from "aos";
-import "aos/dist/aos.css";
-
-AOS.init();
-
 import photo1 from "../../assets/images/photo1.png";
 import photo2 from "../../assets/images/photo2.png";
 import photo3 from "../../assets/images/photo3.png";
 import photo4 from "../../assets/images/photo4.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Team = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
     <div className="max-w-6xl mx-auto">
       <h1 className="md:text-6xl text-2xl font-bold mt-10 text-center">
         Meet Our Team
       </h1>
       <div className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-4 mt-10">
-        <div
-          className="w-full max-w-sm rounded-lg"
-          data-aos="fade-up"
-          data-aos-duration="10000"
-        >
-          <div className="flex flex-col items-center pb-10">
+        <div className="w-full max-w-sm rounded-lg">
+          <div
+            className="flex flex-col items-center pb-10"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
             <img
               className=" h-72 mb-3 rounded-lg"
               src={photo1}
@@ -34,12 +36,13 @@ const Team = () => {
             </span>
           </div>
         </div>
-        <div
-          className="w-full max-w-sm rounded-lg"
-          data-aos="fade-up"
-          data-aos-duration="10000"
-        >
-          <div className="flex flex-col items-center pb-10">
+        <div className="w-full max-w-sm rounded-lg">
+          <div
+            className="flex flex-col items-center pb-10"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
             <img
               className=" h-72 mb-3 rounded-lg"
               src={photo2}
@@ -53,12 +56,13 @@ const Team = () => {
             </span>
           </div>
         </div>
-        <div
-          className="w-full max-w-sm rounded-lg"
-          data-aos="fade-up"
-          data-aos-duration="10000"
-        >
-          <div className="flex flex-col items-center pb-10">
+        <div className="w-full max-w-sm rounded-lg">
+          <div
+            className="flex flex-col items-center pb-10"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
             <img
               className=" h-72 mb-3 rounded-lg"
               src={photo3}
@@ -72,12 +76,13 @@ const Team = () => {
             </span>
           </div>
         </div>
-        <div
-          className="w-full max-w-sm rounded-lg"
-          data-aos="fade-up"
-          data-aos-duration="10000"
-        >
-          <div className="flex flex-col items-center pb-10">
+        <div className="w-full max-w-sm rounded-lg">
+          <div
+            className="flex flex-col items-center pb-10"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
             <img
               className="h-72 mb-3 rounded-lg"
               src={photo4}

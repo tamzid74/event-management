@@ -2,13 +2,16 @@ import { Link, NavLink } from "react-router-dom";
 import navIcon from "../assets/images/icons8-heart-balloon-64.png";
 import { useContext } from "react";
 import { AuthContext } from "../provider/AuthProvider";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+import { useEffect } from "react";
 
 const Navbar = () => {
+  useEffect(()=>{
+    AOS.init({duration:2000})
+  },[])
   const { user, logOut } = useContext(AuthContext);
   console.log(user);
-  const handleSignOut = () => {
-    logOut().then().catch();
-  };
   const navList = (
     <>
       <li>
@@ -54,7 +57,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="navbar bg-base-100 sticky inset-0 z-20">
+    <div data-aos="zoom-in" className="navbar bg-base-100 sticky inset-0 z-20">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -111,11 +114,11 @@ const Navbar = () => {
           </ul>
         </div>
         {user?.email ? (
-          <button onClick={handleSignOut} className="btn btn-sm">
+          <button onClick={logOut} className="btn btn-outline btn-sm">
             Sign out
           </button>
         ) : (
-          <Link className="btn btn-sm" to="/login">
+          <Link className="btn btn-outline btn-sm" to="/login">
             Login
           </Link>
         )}

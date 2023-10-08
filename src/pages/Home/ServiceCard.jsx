@@ -2,17 +2,18 @@ import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
-AOS.init();
+import { useEffect } from "react";
 
 const ServiceCard = ({ service }) => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   const { id, name, image, price, description } = service;
   return (
     <div
+      data-aos="fade-up"
+      data-aos-duration="3000"
       className="card bg-base-100 shadow-xl"
-      data-aos="flip-left"
-      data-aos-easing="ease-out-cubic"
-      data-aos-duration="2000"
     >
       <figure className="px-10 pt-10">
         <img src={image} alt={name} className="rounded-xl " />

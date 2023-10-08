@@ -24,7 +24,7 @@ const SocialLogin = () => {
       <div>
         <button
           onClick={() => handleLogin(googleLogin)}
-          className=" btn btn-sm btn-info w-full rounded-lg font-bold flex items-center"
+          className=" btn btn-sm btn-info btn-outline w-full rounded-lg font-bold flex items-center"
         >
           <BsGoogle></BsGoogle>Login with Google
         </button>
