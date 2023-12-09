@@ -1,4 +1,4 @@
-# social event
+# Social event
 Welcome to Social Event Hub, your go-to platform for discovering and engaging in exciting social events! This project is crafted with a focus on responsiveness, Firebase authentication, and seamless navigation using React Router. Join the community, explore events, and connect with others in a vibrant environment.
 
 
