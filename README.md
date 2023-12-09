@@ -8,7 +8,7 @@ Welcome to Social Event Hub, your go-to platform for discovering and engaging in
 Click here for the live site: [https://wedding-management-website.web.app/](https://wedding-management-website.web.app/)
 
 
-# Feature Of my site
+## 🚩Features of my project:
 
 - Responsive Design: Enjoy a consistent and user-friendly experience on every device, ensuring accessibility from desktops to smartphones.
 
